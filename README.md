@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Patient Notification Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Patient Notification Frontend is a React application designed to interact with Patient Service and Notification Service APIs. It provides a user interface to manage notification templates, view patient details, and send notifications based on predefined criteria.
 
-## Available Scripts
+## Technologies
 
-In the project directory, you can run:
+- React
+- React Router DOM
+- Axios (for API requests)
+- Bootstrap (or any other UI framework)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- View and manage notification templates.
+- Display patient details fetched from Patient Service.
+- Send notifications to patients based on defined criteria.
+- Integrate with Patient Service and Notification Service APIs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Install dependencies using npm:
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Configuration
 
-### `npm run build`
+Set the API base URLs in src/config.js file:
+const API_BASE_URL = {
+  patientService: 'http://localhost:8080/api',
+  notificationService: 'http://localhost:8081/api',
+};
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+export default API_BASE_URL;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the React application:
+npm start
 
-### `npm run eject`
+The application will run on http://localhost:3000. Open this URL in your browser to access the frontend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- View Notification Templates: Navigate to the templates page to view existing notification templates.
+- Manage Templates: Create new templates, update existing ones, or delete templates as needed.
+- Send Notifications: Use the notification sending feature to send notifications based on predefined criteria.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
